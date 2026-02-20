@@ -74,7 +74,7 @@ export const projects: Record<string, Project> = {
     title: "Dashboard d'accidents de la route",
     description:
       "Un petit projet de site one-page présentant un dashboard de statistiques sur les accidents de la route dans la région de Nievre en France.",
-    thumbnail: "/images/dashboard1.png",
+    thumbnail: "/images/Dashboard1.png",
     images: ["/images/Dashboard1.png", "/images/Dashboard2.png"],
     content:
       "Ce projet était mon premier projet de développement web comportant des éléments intéractifs, il fut réalisé sur de bref délais, dans le cadre de cours de développement web à l'institut universitaire technologique de Rouen. Le projet a consisté à créer un site one-page présentant un dashboard de statistiques sur les accidents de la route dans la région de Nievre en France dans un but de sensibilisation et d'information sur la sécurité routière. Le projet a été réalisé en utilisant HTML, PHP, SQL, Bootstrap et JavaScript. Ce projet est important pour moi car il me permet d'avoir un comparatif avec mes projets actuels et de constater les progrès que j'ai réalisés. Le projet n'a pas été publié en ligne, cependant si vous souhaitez le voir, n'hésitez pas à me contacter pour que je puisse vous fournir une copie du projet.",
