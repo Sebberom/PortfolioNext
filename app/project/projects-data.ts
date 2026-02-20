@@ -41,7 +41,7 @@ export const projects: Record<string, Project> = {
       { name: "Figma", icon: "/images/figma.png" },
       { name: "Trello", icon: "/images/trello.png" },
       { name: "Première Pro", icon: "/images/premiere-pro.png" },
-      { name: "React", icon: "/images/react.png" },
+      { name: "React", icon: "/images/React.png" },
     ],
     projectUrl: "https://anomalia.gamer.gd",
   },
@@ -62,7 +62,7 @@ export const projects: Record<string, Project> = {
       { name: "HTML", icon: "/images/HTML.png" },
       { name: "PHP", icon: "/images/php.png" },
       { name: "SQL", icon: "/images/sql.png" },
-      { name: "CSS", icon: "/images/css.png" },
+      { name: "CSS", icon: "/images/CSS.png" },
       { name: "JavaScript", icon: "/images/js.png" },
       { name: "Bootstrap", icon: "/images/bootstrap.png" },
       { name: "Python", icon: "/images/python.png" },
@@ -74,7 +74,7 @@ export const projects: Record<string, Project> = {
     title: "Dashboard d'accidents de la route",
     description:
       "Un petit projet de site one-page présentant un dashboard de statistiques sur les accidents de la route dans la région de Nievre en France.",
-    thumbnail: "/images/dashboard1.png",
+    thumbnail: "/images/Dashboard1.png",
     images: ["/images/Dashboard1.png", "/images/Dashboard2.png"],
     content:
       "Ce projet était mon premier projet de développement web comportant des éléments intéractifs, il fut réalisé sur de bref délais, dans le cadre de cours de développement web à l'institut universitaire technologique de Rouen. Le projet a consisté à créer un site one-page présentant un dashboard de statistiques sur les accidents de la route dans la région de Nievre en France dans un but de sensibilisation et d'information sur la sécurité routière. Le projet a été réalisé en utilisant HTML, PHP, SQL, Bootstrap et JavaScript. Ce projet est important pour moi car il me permet d'avoir un comparatif avec mes projets actuels et de constater les progrès que j'ai réalisés. Le projet n'a pas été publié en ligne, cependant si vous souhaitez le voir, n'hésitez pas à me contacter pour que je puisse vous fournir une copie du projet.",
@@ -100,7 +100,7 @@ export const projects: Record<string, Project> = {
       "Ce projet consiste à créer un portfolio personnel pour présenter mes compétences, mes expériences et mes projets de manière professionnelle et attrayante. Le site a été développé en utilisant Next.js, React et TypeScript, et il met en avant mes réalisations de manière interactive et visuellement agréable. Je n'ai pas besoin de vous donner d'url pour ce projet, puisque vous êtes actuellement en train de le visiter ;) ! Ce projet est important pour moi car il me permet de mettre en avant mon travail et de montrer mes compétences à des employeurs potentiels ou à toute personne intéressée par mon parcours. De plus, il me permet de partager mes projets et de recevoir des retours constructifs pour continuer à m'améliorer en tant que développeur web.Ce dernier comprend : un logo, une section d'accueil, une section à propos, une section projets, une section de contact, une page pour chaque projets ainsi que des animations visuelles pour rendre l'expérience utilisateur plus agréable.",
     skills: [
       { name: "Next.js", icon: "/images/Next.png" },
-      { name: "React", icon: "/images/react.png" },
+      { name: "React", icon: "/images/React.png" },
       { name: "TypeScript", icon: "/images/typescript.png" },
       { name: "Tailwind CSS", icon: "/images/tailwind.png" },
       { name: "Ilustrator", icon: "/images/ilustrator.png" },
