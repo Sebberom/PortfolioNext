@@ -120,9 +120,9 @@ export default function Home() {
         {/* Hero Section */}
         <section
           id="home"
-          className="flex min-h-screen items-center justify-center pt-16 relative z-10"
+          className="flex min-h-screen flex-col lg:flex-row items-center justify-center pt-16 relative z-10"
         >
-          <div className="w-full max-w-3xl px-16 py-32">
+          <div className="w-full max-w-3xl px-6 sm:px-10 lg:px-16 py-16 lg:py-32">
             <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className="text-4xl font-bold text-black dark:text-white">
                 <EncryptedText
@@ -142,7 +142,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="relative h-[500px] w-full overflow-hidden flex items-center justify-center">
+          <div className="relative h-[360px] sm:h-[420px] lg:h-[500px] w-full overflow-hidden flex items-center justify-center">
             <OrbitingCircles>
               <Image
                 src="/images/node.png"
@@ -258,9 +258,9 @@ export default function Home() {
         {/* About Section */}
         <section
           id="about"
-          className="flex min-h-screen items-center justify-center relative z-10"
+          className="flex min-h-screen flex-col lg:flex-row items-center justify-center relative z-10 gap-10 lg:gap-0"
         >
-          <div className="w-full max-w-3xl px-16 py-32">
+          <div className="w-full max-w-3xl px-6 sm:px-10 lg:px-16 py-16 lg:py-32">
             <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className="text-4xl font-bold text-black dark:text-white">
                 <EncryptedText
@@ -294,16 +294,16 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="relative overflow-hidden flex-col left-10 items-center justify-center">
+          <div className="relative overflow-hidden flex flex-col items-center justify-center">
             <Image
               src="/images/PhotoRomain.png"
               alt="Photo Sde Romain Sebbe"
               width={500}
               height={500}
-              className="rounded-full border-4 border-white shadow-lg"
+              className="w-56 h-56 sm:w-72 sm:h-72 lg:w-[500px] lg:h-[500px] object-cover rounded-full border-4 border-white shadow-lg"
             />
           </div>
-          <div className="relative right-10 text-zinc-700 dark:text-zinc-300">
+          <div className="relative w-full max-w-3xl lg:max-w-md px-6 sm:px-10 lg:px-0 text-zinc-700 dark:text-zinc-300">
             <Timeline
               items={[
                 {
@@ -383,19 +383,14 @@ export default function Home() {
               ]}
             />
           </div>
-          <div className="relative w-50% overflow-hidden flex-col items-center justify-center"></div>
         </section>
 
         {/* Projects Section */}
-        <section
-          id="projects"
-          className="relative z-10"
-          style={{ height: "400vh" }}
-        >
-          <div className="sticky top-0 h-screen flex flex-col overflow-hidden">
+        <section id="projects" className="relative z-10 h-auto lg:h-[400vh]">
+          <div className="lg:sticky lg:top-0 lg:h-screen flex flex-col overflow-hidden">
             {/* Horizontal scroll container */}
-            <div className="px-16 py-8 mt-50">
-              <h1 className="text-4xl font-bold text-black dark:text-white top-50%">
+            <div className="px-6 sm:px-10 lg:px-16 py-8 mt-12 lg:mt-20">
+              <h1 className="text-3xl lg:text-4xl font-bold text-black dark:text-white top-50%">
                 <EncryptedText
                   text="Projets"
                   encryptedClassName="text-neutral-500"
@@ -405,10 +400,16 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="flex-1 overflow-hidden flex items-center">
-              <div id="projects-container" className="flex gap-8 px-16">
+            <div className="flex-1 overflow-hidden flex items-start lg:items-center">
+              <div
+                id="projects-container"
+                className="flex flex-col lg:flex-row gap-8 px-6 sm:px-10 lg:px-16 pb-12 lg:pb-0 w-full"
+              >
                 {Object.entries(projects).map(([id, project]) => (
-                  <div key={id} className="w-2xl flex-shrink-0 h-96">
+                  <div
+                    key={id}
+                    className="w-full lg:w-[42rem] flex-shrink-0 h-auto lg:h-96"
+                  >
                     <ProjectCard
                       id={id}
                       title={project.title}
@@ -428,9 +429,9 @@ export default function Home() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="flex min-h-screen items-start justify-start relative z-10 pt-32"
+          className="flex min-h-screen items-start justify-center relative z-10 pt-32"
         >
-          <div className="w-full px-16 py-32">
+          <div className="w-full px-6 sm:px-10 lg:px-16 py-16 lg:py-32">
             <div className="flex flex-col items-start gap-3 text-left mb-8">
               <h1 className="text-4xl font-bold text-black dark:text-white">
                 <EncryptedText
@@ -511,7 +512,7 @@ export default function Home() {
                       href="https://github.com/Sebberom"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-2xl font-bold mb-4"
+                      className="flex items-center gap-2 text-lg sm:text-2xl font-bold mb-4"
                     >
                       <Image
                         src="/images/github.png"
@@ -522,11 +523,11 @@ export default function Home() {
                       <span>@Sebberom</span>
                     </a>
                   </li>
-                  <li className="flex items-center gap-2 text-2xl font-bold mb-4">
+                  <li className="flex items-center gap-2 text-lg sm:text-2xl font-bold mb-4">
                     <a
                       href="/images/CvSebbe.pdf"
                       download="CvSebbe.pdf"
-                      className="flex items-center gap-2 text-2xl font-bold mb-4"
+                      className="flex items-center gap-2 text-lg sm:text-2xl font-bold mb-4"
                     >
                       <Image
                         src="/images/cv.png"
@@ -537,7 +538,7 @@ export default function Home() {
                       <span>Télécharger mon curriculum vitae</span>
                     </a>
                   </li>
-                  <li className="flex items-center gap-2 text-2xl font-bold mb-4">
+                  <li className="flex items-center gap-2 text-lg sm:text-2xl font-bold mb-4">
                     <a
                       href="https://www.linkedin.com/in/romain-sebbe/"
                       target="_blank"

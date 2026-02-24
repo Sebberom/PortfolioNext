@@ -12,25 +12,45 @@ export const ProjectsScrollAnimation = () => {
 
     if (!container || !section) return;
 
-    // Calculer la largeur totale à scroller
-    const totalWidth = container.scrollWidth;
-    const viewportWidth = window.innerWidth;
-    const distance = totalWidth - viewportWidth;
+    let tween: gsap.core.Tween | null = null;
 
-    // Animation avec GSAP
-    gsap.to(container, {
-      x: -distance,
-      scrollTrigger: {
-        trigger: section,
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1, // smooth scrub
-        markers: false, // debug (mets true pour voir les markers)
-      },
-    });
+    const setupAnimation = () => {
+      tween?.scrollTrigger?.kill();
+      tween?.kill();
+      gsap.set(container, { x: 0 });
+
+      if (window.innerWidth < 1024) return;
+
+      const totalWidth = container.scrollWidth;
+      const viewportWidth = window.innerWidth;
+      const distance = totalWidth - viewportWidth;
+
+      if (distance <= 0) return;
+
+      tween = gsap.to(container, {
+        x: -distance,
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 1,
+          invalidateOnRefresh: true,
+          markers: false,
+        },
+      });
+    };
+
+    setupAnimation();
+    window.addEventListener("resize", setupAnimation);
+    ScrollTrigger.addEventListener("refreshInit", setupAnimation);
+    ScrollTrigger.refresh();
 
     return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      window.removeEventListener("resize", setupAnimation);
+      ScrollTrigger.removeEventListener("refreshInit", setupAnimation);
+      tween?.scrollTrigger?.kill();
+      tween?.kill();
     };
   }, []);
 
