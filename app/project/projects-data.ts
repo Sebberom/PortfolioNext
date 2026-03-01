@@ -17,7 +17,7 @@ export const projects: Record<string, Project> = {
   "project-1": {
     title: "Anomalia & Co",
     description:
-      "Jeu vidéo de type survival horror développé sous Unity, mettant en scène un protagoniste dont un proche est dans un état de santé critique. Ne pouvant pas payé les soins, il accepte un travail de nuit en tant que \"observateur de terrain\". Cependant lorsqu'il arrive sur place, il reçoit des instructions particulières de la part de son employeur : rester dans la maison pendant 6 heures, ne pas toucher à quoi que ce soit et en cas d'anomalie lui en envoyer une photo. Cependant, les choses ne se passent pas comme prévu et le protagoniste va devoir faire face à des événements de plus en plus étranges et inquiétants.",
+      "Jeu vidéo de type survival horror développé sous Unity, mettant en scène un protagoniste dont un proche est dans un état de santé critique. Ne pouvant pas payé les soins, il accepte un travail de nuit en tant qu\'\"observateur de terrain\". Cependant lorsqu'il arrive sur place, il reçoit des instructions particulières de la part de son employeur : rester dans la maison pendant 6 heures, ne pas toucher à quoi que ce soit et en cas d'anomalie lui en envoyer une photo. Les choses ne se passent pas comme prévu et le protagoniste va devoir faire face à des événements de plus en plus étranges et inquiétants.",
     thumbnail: "/images/Anomalia1.png",
     images: [
       "/images/Anomalia1.png",
@@ -57,7 +57,7 @@ export const projects: Record<string, Project> = {
       "/images/Whisper4.png",
     ],
     content:
-      "Ce projet a consisté à développer un portail web permettant aux étudiants de l'UFR des sciences de l'homme et de la société de l'université de rouen d'utiliser un service d'IA de transcription audio à texte pour des fins académiques. Ce projet est passé tout d'abord par une phase d'apropriation de la technologie d'IA de Open AI, de la base de donnée de l'université et de la logique derière l'envoie et le traitement des fichiers audio. Ensuite, j'ai créer une maquète graphique sur figma afin de confirmer les besoins et attentes du commanditaire. Enfin j'ai développé le portail web comprenant : une page d'authentification relié au système multipasse de l'unviersitée, une page d'acceuil comportant un formulaire d'envoie de fichier audio et vidéo accompagner d'une bar de chargement donnant à l'utilisateur un feed-back visuel, une section à propos informant les utilisateurs sur l'utilisation du portail, une section de contact et crédits ainsi qu'une modale de résumé de l'envoie du fichier. Le projet a été publié sur le domaine de l'université et est actuellement en service pour les étudiants de l'UFR des sciences de l'homme et de la société.",
+      "Ce projet a consisté à développer un portail web permettant aux étudiants de l'UFR des sciences de l'homme et de la société de l'université de rouen d'utiliser un service d'IA de transcription audio à texte pour des fins académiques. Ce projet est passé tout d'abord par une phase d'appropriation de la technologie d'IA de Open AI, de la base de données de l'université et de la logique derrière l'envoi et le traitement des fichiers audio. Ensuite, j'ai créé une maquette graphique sur figma afin de confirmer les besoins et attentes du commanditaire. Enfin j'ai développé le portail web comprenant : une page d'authentification relié au système multipasse de l'unviersité, une page d'accueil comportant un formulaire d'envoie de fichier audio et vidéo accompagner d'une bar de chargement donnant à l'utilisateur un feed-back visuel, une section à propos informant les utilisateurs sur l'utilisation du portail, une section de contact et crédits ainsi qu'une modale de résumé de l'envoie du fichier. Le projet a été publié sur le domaine de l'université et est actuellement en service pour les étudiants de l'UFR des sciences de l'homme et de la société.",
     skills: [
       { name: "HTML", icon: "/images/HTML.png" },
       { name: "PHP", icon: "/images/php.png" },
@@ -73,7 +73,7 @@ export const projects: Record<string, Project> = {
   "project-3": {
     title: "Dashboard d'accidents de la route",
     description:
-      "Un petit projet de site one-page présentant un dashboard de statistiques sur les accidents de la route dans la région de Nievre en France.",
+      "Un petit projet de site one-page présentant un dashboard de statistiques sur les accidents de la route du département de la Nièvre en France.",
     thumbnail: "/images/Dashboard1.png",
     images: ["/images/Dashboard1.png", "/images/Dashboard2.png"],
     content:
@@ -97,7 +97,7 @@ export const projects: Record<string, Project> = {
       "/images/Portfolio4.png",
     ],
     content:
-      "Ce projet consiste à créer un portfolio personnel pour présenter mes compétences, mes expériences et mes projets de manière professionnelle et attrayante. Le site a été développé en utilisant Next.js, React et TypeScript, et il met en avant mes réalisations de manière interactive et visuellement agréable. Je n'ai pas besoin de vous donner d'url pour ce projet, puisque vous êtes actuellement en train de le visiter ;) ! Ce projet est important pour moi car il me permet de mettre en avant mon travail et de montrer mes compétences à des employeurs potentiels ou à toute personne intéressée par mon parcours. De plus, il me permet de partager mes projets et de recevoir des retours constructifs pour continuer à m'améliorer en tant que développeur web.Ce dernier comprend : un logo, une section d'accueil, une section à propos, une section projets, une section de contact, une page pour chaque projets ainsi que des animations visuelles pour rendre l'expérience utilisateur plus agréable.",
+      "Ce projet consiste à créer un portfolio personnel pour présenter mes compétences, mes expériences et mes projets de manière professionnelle et attrayante. Le site a été développé en utilisant Next.js, React et TypeScript, et il met en avant mes réalisations de manière interactive et visuellement agréable. Je n'ai pas besoin de vous donner d'url pour ce projet, puisque vous êtes actuellement en train de le visiter ;) ! Ce projet est important pour moi car il me permet de mettre en avant mon travail et de montrer mes compétences à des employeurs potentiels ou à toute personne intéressée par mon parcours. De plus, il me permet de partager mes projets et de recevoir des retours constructifs pour continuer à m'améliorer en tant que développeur web. Ce dernier comprend : un logo, une section d'accueil, une section à propos, une section projets, une section de contact, une page pour chaque projet ainsi que des animations visuelles pour rendre l'expérience utilisateur plus agréable.",
     skills: [
       { name: "Next.js", icon: "/images/Next.png" },
       { name: "React", icon: "/images/React.png" },

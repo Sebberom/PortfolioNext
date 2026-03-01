@@ -85,13 +85,13 @@ export default function Home() {
         />
       </div>
       <ScrollProgress />
-      <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
+      <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md border-b border-zinc-800">
         <div className="flex items-center justify-between h-16 px-4 md:px-8">
           {/* Left Navigation */}
           <nav className="flex gap-4 text-sm font-medium"></nav>
 
           {/* Center Title */}
-          <h1 className="text-xl font-bold text-black dark:text-white absolute left-1/2 -translate-x-1/2"></h1>
+          <h1 className="text-xl font-bold text-white absolute left-1/2 -translate-x-1/2"></h1>
 
           {/* Right Logo - Back to Top */}
           <div
@@ -124,19 +124,19 @@ export default function Home() {
         >
           <div className="w-full max-w-3xl px-6 sm:px-10 lg:px-16 py-16 lg:py-32">
             <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className="text-4xl font-bold text-black dark:text-white">
+              <h1 className="text-4xl font-bold text-white">
                 <EncryptedText
                   text="SEBBE Romain"
                   encryptedClassName="text-neutral-500"
-                  revealedClassName="dark:text-white text-black"
+                  revealedClassName="text-white"
                   revealDelayMs={50}
                 />
               </h1>
-              <p className="text-lg text-zinc-600 dark:text-zinc-400">
+              <p className="text-lg text-zinc-300">
                 <EncryptedText
                   text="Développeur et intégrateur web / Étudiant en informatique / Game developer"
                   encryptedClassName="text-neutral-500"
-                  revealedClassName="dark:text-white text-black"
+                  revealedClassName="text-white"
                   revealDelayMs={30}
                 />
               </p>
@@ -262,11 +262,11 @@ export default function Home() {
         >
           <div className="w-full max-w-3xl px-6 sm:px-10 lg:px-16 py-16 lg:py-32">
             <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className="text-4xl font-bold text-black dark:text-white">
+              <h1 className="text-4xl font-bold text-white">
                 <EncryptedText
                   text="A propos de moi"
                   encryptedClassName="text-neutral-500"
-                  revealedClassName="dark:text-white text-black"
+                  revealedClassName="text-white"
                   revealDelayMs={50}
                 />
               </h1>
@@ -283,9 +283,9 @@ export default function Home() {
                 passion mon métier.
               </p>
               <p className="text-lg text-zinc-100 dark:text-zinc-100">
-                Consomateur de contenu en ligne depuis mon enfance, j&rsquo;ai
+                Consommateur de contenus en ligne depuis mon enfance, j&rsquo;ai
                 appris l&rsquo;anglais très tôt de manière autodidacte et
-                possède un niveau que nombreux considèrent comme biligue.
+                possède un niveau bilingue.
               </p>
               <p className="text-lg text-zinc-100 dark:text-zinc-100">
                 En dehors de mes études, je suis un grand amateur de jeux vidéo
@@ -300,10 +300,11 @@ export default function Home() {
               alt="Photo Sde Romain Sebbe"
               width={500}
               height={500}
+              style={{ objectPosition: "center 0%" }}
               className="w-56 h-56 sm:w-72 sm:h-72 lg:w-[500px] lg:h-[500px] object-cover rounded-full border-4 border-white shadow-lg"
             />
           </div>
-          <div className="relative w-full max-w-3xl lg:max-w-md px-6 sm:px-10 lg:px-0 text-zinc-700 dark:text-zinc-300">
+          <div className="relative w-full max-w-3xl lg:max-w-md px-6 sm:px-10 lg:px-0 text-zinc-300">
             <Timeline
               items={[
                 {
@@ -390,11 +391,11 @@ export default function Home() {
           <div className="lg:sticky lg:top-0 lg:h-screen flex flex-col overflow-hidden">
             {/* Horizontal scroll container */}
             <div className="px-6 sm:px-10 lg:px-16 py-8 mt-12 lg:mt-20">
-              <h1 className="text-3xl lg:text-4xl font-bold text-black dark:text-white top-50%">
+              <h1 className="text-3xl lg:text-4xl font-bold text-white top-50%">
                 <EncryptedText
                   text="Projets"
                   encryptedClassName="text-neutral-500"
-                  revealedClassName="dark:text-white text-black"
+                  revealedClassName="text-white"
                   revealDelayMs={50}
                 />
               </h1>
@@ -433,11 +434,11 @@ export default function Home() {
         >
           <div className="w-full px-6 sm:px-10 lg:px-16 py-16 lg:py-32">
             <div className="flex flex-col items-start gap-3 text-left mb-8">
-              <h1 className="text-4xl font-bold text-black dark:text-white">
+              <h1 className="text-4xl font-bold text-white">
                 <EncryptedText
                   text="Contact"
                   encryptedClassName="text-neutral-500"
-                  revealedClassName="dark:text-white text-black"
+                  revealedClassName="text-white"
                   revealDelayMs={50}
                 />
               </h1>
@@ -476,14 +477,14 @@ export default function Home() {
                     />
                     <RainbowButton
                       type="submit"
-                      className="px-6 py-2 bg-pink-500 text-white rounded-md hover: scale-105 transition-transform"
+                      className="px-6 py-2 rounded-md hover:scale-105 transition-transform"
                       variant="outline"
                     >
                       Envoyer
                     </RainbowButton>
                   </form>
 
-                  <div className="mt-8 space-y-2 text-zinc-700 dark:text-zinc-300 text-sm">
+                  <div className="mt-8 space-y-2 text-zinc-300 text-sm">
                     <p>
                       📧 &nbsp;
                       <a
@@ -506,7 +507,7 @@ export default function Home() {
               {/* Right side - where to find me */}
               <div className="flex-1">
                 <h2 className="text-2xl font-bold mb-4">Où me trouver</h2>
-                <ul className="space-y-6 text-zinc-700 dark:text-zinc-300 text-lg">
+                <ul className="space-y-6 text-zinc-300 text-lg">
                   <li className="flex items-center gap-2">
                     <a
                       href="https://github.com/Sebberom"
@@ -560,7 +561,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <footer className="text-center py-4 text-sm text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-900">
+      <footer className="text-center py-4 text-sm text-zinc-400 bg-zinc-900">
         &copy; {new Date().getFullYear()} Romain Sebbe. Tous droits réservés.
         <br />
       </footer>

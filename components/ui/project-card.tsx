@@ -29,7 +29,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <NeonGradientCard>
         <div className="overflow-hidden rounded-lg cursor-pointer">
           {/* Image */}
-          <div className="relative h-48 w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+          <div className="relative h-48 w-full overflow-hidden bg-zinc-800">
             <Image
               src={thumbnail}
               alt={title}
@@ -41,14 +41,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           {/* Content */}
           <div className="p-6 space-y-4">
             {/* Title */}
-            <h3 className="text-xl font-semibold text-black dark:text-white line-clamp-2">
+            <h3 className="text-xl font-semibold text-white line-clamp-2">
               {title}
             </h3>
 
             {/* Description */}
-            <p className="text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2">
-              {description}
-            </p>
+            <p className="text-sm text-zinc-400 line-clamp-2">{description}</p>
 
             {/* Skills at bottom left */}
             <div className="flex flex-wrap gap-2 pt-2">

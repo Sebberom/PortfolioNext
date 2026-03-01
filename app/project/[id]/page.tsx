@@ -52,7 +52,7 @@ export default function ProjectDetailPage() {
         </div>
         <div className="flex min-h-screen items-center justify-center relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+            <h1 className="text-4xl font-bold mb-4 text-white">
               Projet non trouvé
             </h1>
             <button
@@ -92,11 +92,11 @@ export default function ProjectDetailPage() {
       </div>
       <ScrollProgress />
 
-      <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
+      <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md border-b border-zinc-800">
         <div className="flex items-center justify-between h-16 px-4 md:px-8">
           <button
             onClick={() => router.push("/")}
-            className="text-black dark:text-white hover:opacity-70 transition"
+            className="text-white hover:opacity-70 transition"
           >
             <Image
               src="/images/icon.png"
@@ -162,7 +162,7 @@ export default function ProjectDetailPage() {
 
               {/* Compteur d'images */}
               {images.length > 1 && (
-                <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2">
+                <p className="text-center text-sm text-zinc-400 mt-2">
                   {currentImageIndex + 1} / {images.length}
                 </p>
               )}
@@ -170,24 +170,24 @@ export default function ProjectDetailPage() {
 
             {/* Titre et description */}
             <div className="mb-12">
-              <h1 className="text-4xl font-bold text-black dark:text-white mb-4">
+              <h1 className="text-4xl font-bold text-white mb-4">
                 <EncryptedText text={project.title} revealDelayMs={50} />
               </h1>
-              <p className="text-xl text-zinc-600 dark:text-zinc-300 mb-8">
+              <p className="text-xl text-zinc-300 mb-8">
                 {project.description}
               </p>
             </div>
 
             {/* Technologies utilisées */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
+              <h2 className="text-2xl font-bold text-white mb-4">
                 Technologies utilisées
               </h2>
               <div className="flex flex-wrap gap-4">
                 {project.skills.map((skill: Skill) => (
                   <div
                     key={skill.name}
-                    className="flex items-center gap-2 px-4 py-2 border rounded-lg border-zinc-300 dark:border-zinc-700"
+                    className="flex items-center gap-2 px-4 py-2 border rounded-lg border-zinc-700"
                   >
                     <Image
                       src={skill.icon}
@@ -195,9 +195,7 @@ export default function ProjectDetailPage() {
                       width={24}
                       height={24}
                     />
-                    <span className="text-black dark:text-white">
-                      {skill.name}
-                    </span>
+                    <span className="text-white">{skill.name}</span>
                   </div>
                 ))}
               </div>
@@ -205,10 +203,10 @@ export default function ProjectDetailPage() {
 
             {/* Contenu détaillé */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
+              <h2 className="text-2xl font-bold text-white mb-4">
                 À propos du projet
               </h2>
-              <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
+              <p className="text-lg text-zinc-300 leading-relaxed">
                 {project.content}
               </p>
             </div>
@@ -236,7 +234,7 @@ export default function ProjectDetailPage() {
         </section>
       </main>
       <br />
-      <footer className="text-center py-4 text-sm text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-900">
+      <footer className="text-center py-4 text-sm text-zinc-400 bg-zinc-900">
         &copy; {new Date().getFullYear()} Romain Sebbe. Tous droits réservés.
         <br />
       </footer>
