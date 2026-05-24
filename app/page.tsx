@@ -381,6 +381,44 @@ export default function Home() {
                     },
                   },
                 },
+                {
+                  title: "2026",
+                  content:
+                    "Stage de 3 mois au sein de l'université de Rouen à la direction de la communication en tant que développeur web",
+                  styles: {
+                    rail: {
+                      color: "white",
+                      backgroundColor: "white",
+                    },
+                    content: {
+                      color: "white",
+                      fontWeight: "bold",
+                    },
+                    title: {
+                      color: "white",
+                      fontWeight: "bold",
+                    },
+                  },
+                },
+                {
+                  title: "2026-2028",
+                  content:
+                    "Master professionnel manager en architectures et applications logicielles au CESI",
+                  styles: {
+                    rail: {
+                      color: "white",
+                      backgroundColor: "white",
+                    },
+                    content: {
+                      color: "white",
+                      fontWeight: "bold",
+                    },
+                    title: {
+                      color: "white",
+                      fontWeight: "bold",
+                    },
+                  },
+                },
               ]}
             />
           </div>
